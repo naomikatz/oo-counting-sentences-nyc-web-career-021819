@@ -28,7 +28,7 @@ class String
               word[-1]
             end 
             binding.pry
-    array.any? do |word|
+    array.each do |word|
       if word.any?("!", "?", ".")
         count += 1
       end
