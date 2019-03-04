@@ -17,9 +17,10 @@ class String
   end
   
   def split_sentence
-  self.split.map do |word|
+    self.split.map do |word|
       word[-1]
-end
+    end
+  end
 
   def count_sentences
     count = 0
@@ -34,4 +35,3 @@ end
     end
   end
 end 
-end
