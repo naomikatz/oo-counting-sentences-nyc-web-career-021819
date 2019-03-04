@@ -27,7 +27,6 @@ class String
     array = self.split.map do |word|
               word[-1]
             end 
-            binding.pry
     array.each do |word|
       if word.include?("!") || word.include?("?") || word.include?(".")
         count += 1
