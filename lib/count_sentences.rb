@@ -28,7 +28,7 @@ class String
               word[-1]
             end 
     array.each do |word|
-      if word.include?("!", "?", ".")
+      if word.include?(["!", "?", "."])
         count += 1
       end
       return count 
