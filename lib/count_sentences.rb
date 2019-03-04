@@ -27,8 +27,8 @@ class String
     array = self.split.map do |word|
               word[-1]
             end 
-    array.each do |word|
-      if word.include?("!", "?", ".")
+    array.any? do |word|
+      if word.any?("!", "?", ".")
         count += 1
       end
       return count 
