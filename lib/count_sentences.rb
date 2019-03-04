@@ -32,7 +32,7 @@ class String
       if word.include?("!") || word.include?("?") || word.include?(".")
         count += 1
       end
-      return count 
     end
+    return count 
   end
 end 
