@@ -29,7 +29,7 @@ class String
             end 
             binding.pry
     array.each do |word|
-      if word.include?("!", "?", ".")
+      if word.include?("!") || word.include?("?") || word.include?(".")
         count += 1
       end
       return count 
